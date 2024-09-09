@@ -5,6 +5,7 @@ html{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin:0;
     padding:0;
+    scroll-padding-top:50px;
 }
 .header{
     background-color: rgb(17, 17, 90);
@@ -15,7 +16,7 @@ html{
     position:fixed;
     top:0;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 .logo{
     margin-left:100px;
@@ -29,7 +30,8 @@ html{
 }
 .nav ul li{
     list-style-type:none;
-    display:inline-block;
+    /* display:flex; */
+    display: inline-block;
     margin-right:50px;
 } 
 .nav ul li a{
@@ -218,21 +220,6 @@ html{
     height: 100%;
     width: 100%;
 }
-@media (max-width: 768px){
-    .container2{
-        margin:110px;
-        margin-left:50px;
-        margin-right:50px;
-    }
-    .title{
-        font-size:20px;
-        font-weight:bold;
-    }
-    .stitle{
-        font-size:15px;
-        margin:20px;
-    }
-}
 .achievement{
     margin:100px;
 }
@@ -240,7 +227,6 @@ html{
     display:flex;
     align-items: center;
     justify-content: center;
-    overflow: auto;
 }
 .sd{
     height: 300px;
@@ -263,4 +249,31 @@ html{
 #footw{
     text-align: center;
     font-size: 10px;
+}
+@media (max-width: 768px) { 
+    .container1{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .major{
+        font-weight: bold;
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    .name{
+        font-size:35px;
+    }
+    .para{
+        font-size:20px;
+        margin-bottom:20px;
+    }
+    .logo{
+        height:20px;
+        width:100px;
+    }
+    .button a{
+        font-size:15px;
+        width:75px;
+        text-align: center;
+    }
 }
